@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
- <head>
-    <base href="/" />
+  <head>
+    <base href="/its_gram_live/" />
     <meta
       name="google-signin-client_id"
       content="197797801720-rqrguij59pali5mrgshacm9crb89agpl.apps.googleusercontent.com"
@@ -28,12 +28,12 @@
 
     <script>
       // The value below is injected by flutter build, do not touch.
-      const serviceWorkerVersion = "2396900034";
+      const serviceWorkerVersion = "2833433754";
     </script>
     <!-- This script adds the flutter initialization JS code -->
     <script src="flutter.js" defer></script>
- </head>
- <body>
+  </head>
+  <body>
     <script>
       window.addEventListener("load", function (ev) {
         // Download main.dart.js
@@ -45,12 +45,14 @@
             let config = {
               renderer: "html", // Ganti "html" dengan "canvaskit" jika diperlukan
             };
-            engineInitializer.initializeEngine(config).then(function (appRunner) {
-              appRunner.runApp();
-            });
+            engineInitializer
+              .initializeEngine(config)
+              .then(function (appRunner) {
+                appRunner.runApp();
+              });
           },
         });
       });
     </script>
- </body>
+  </body>
 </html>
